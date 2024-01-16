@@ -7,7 +7,7 @@ public class Task4 {
         int minValue = 100000;
         int maxValue = 999999;
 
-        number = getChangedNumber(Helpers.getIntInput(" Enter a six digit number: ", minValue, maxValue));
+        number = getChangedNumber(Helpers.getIntDiapazonInput(" Enter a six digit number: ", minValue, maxValue));
         System.out.println("\n Result: " + number);
     }
 

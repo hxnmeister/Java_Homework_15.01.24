@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Helpers {
-    public static int getIntInput(String inputMessage, int minValue, int maxValue){
+    public static int getIntDiapazonInput(String inputMessage, int minValue, int maxValue){
         int value;
         Scanner scanner = new Scanner(System.in);
 
@@ -24,5 +24,21 @@ public class Helpers {
         }while (true);
 
         return value;
+    }
+    public static int getIntInput(String inputMessage){
+        Scanner scanner = new Scanner(System.in);
+
+        do {
+            System.out.print(inputMessage);
+
+            if(!scanner.hasNextInt()){
+                System.out.println("Your input \"" + scanner.nextLine() + "\" is invalid");
+                System.out.println("You need to input a number!\n");
+
+                continue;
+            }
+        }while (!scanner.hasNextInt());
+
+        return scanner.nextInt();
     }
 }

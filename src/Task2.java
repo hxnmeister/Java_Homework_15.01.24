@@ -6,28 +6,9 @@ public class Task2 {
         int number;
         int percent;
 
-        number = getNumber(" Enter number: ");
-        percent = getNumber(" Enter percent: ");
+        number = Helpers.getIntInput(" Enter number: ");
+        percent = Helpers.getIntInput(" Enter percent: ");
 
         System.out.println("\n Result: " + (double)(number * percent) / 100);
-    }
-
-    public static int getNumber(String inputMessage){
-        Scanner scanner = new Scanner(System.in);
-        boolean isInputInt;
-
-        do {
-            System.out.print(inputMessage);
-            isInputInt = scanner.hasNextInt();
-
-            if(!isInputInt){
-                System.out.println("Your input \"" + scanner.nextLine() + "\" is invalid");
-                System.out.println("You need to input a number!\n");
-
-                continue;
-            }
-        }while (!isInputInt);
-
-        return scanner.nextInt();
     }
 }
