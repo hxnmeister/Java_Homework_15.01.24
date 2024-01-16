@@ -6,28 +6,8 @@ public class Task4 {
         int number;
         int minValue = 100000;
         int maxValue = 999999;
-        Scanner scanner = new Scanner(System.in);
 
-        do {
-            System.out.print(" Enter a six digit number: ");
-
-            if(!scanner.hasNextInt()){
-                System.out.println("\n Your input \"" + scanner.nextLine() + "\" is invalid!");
-                continue;
-            }
-
-            number = scanner.nextInt();
-
-            if(number < minValue || number > maxValue){
-                System.out.println("\n Number \"" + number + "\" is incorrect!");
-                continue;
-            }
-
-            number = getChangedNumber(number);
-
-            break;
-        }while (true);
-
+        number = getChangedNumber(Helpers.getIntInput(" Enter a six digit number: ", minValue, maxValue));
         System.out.println("\n Result: " + number);
     }
 
