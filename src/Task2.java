@@ -14,7 +14,7 @@ public class Task2 {
 
     public static int getNumber(String inputMessage){
         Scanner scanner = new Scanner(System.in);
-        boolean isInputInt = false;
+        boolean isInputInt;
 
         do {
             System.out.print(inputMessage);
