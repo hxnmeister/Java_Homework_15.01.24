@@ -10,8 +10,6 @@ public class Task3 {
         Scanner scanner = new Scanner(System.in);
 
         for (int i = 0; i < numbersCount; i++) {
-            int tempInt;
-
             System.out.print(" Enter " + (i + 1) + " digit: ");
 
             do {
@@ -20,7 +18,7 @@ public class Task3 {
                     continue;
                 }
 
-                tempInt = scanner.nextInt();
+                int tempInt = scanner.nextInt();
 
                 if(tempInt < minNumber || tempInt > maxNumber){
                     errorMessage(String.valueOf(tempInt), i + 1);
