@@ -5,7 +5,7 @@ public class Task5 {
         int maxValue = 12;
         String currentSeason = "";
 
-        month = Helpers.getIntDiapazonInput(" Enter month by number: ", minValue, maxValue);
+        month = Helpers.getIntRangeInput(" Enter month by number: ", minValue, maxValue);
 
         currentSeason = switch (month) {
             case 1, 2, 12 -> "Winter";

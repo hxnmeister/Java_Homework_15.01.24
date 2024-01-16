@@ -11,7 +11,7 @@ public class Task3 {
         for (int i = 0; i < numbersCount; i++) {
 
             finalNumber *= numberGrowIndex;
-            finalNumber += Helpers.getIntDiapazonInput(" Enter " + (i + 1) + " digit: ", minNumber, maxNumber);
+            finalNumber += Helpers.getIntRangeInput(" Enter " + (i + 1) + " digit: ", minNumber, maxNumber);
         }
 
         System.out.println("\n Result: " + finalNumber);

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Helpers {
-    public static int getIntDiapazonInput(String inputMessage, int minValue, int maxValue){
+    public static int getIntRangeInput(String inputMessage, int minValue, int maxValue){
         int value;
         Scanner scanner = new Scanner(System.in);
 

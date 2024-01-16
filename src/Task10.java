@@ -11,7 +11,7 @@ public class Task10 {
         Random random = new Random();
 
         System.out.print("\n Array: ");
-        
+
         for (int i = 0; i < randomArray.length; i++) {
             randomArray[i] = random.nextInt(-20, 20);
 

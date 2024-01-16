@@ -13,7 +13,7 @@ public class Task6 {
         System.out.println("  2. inches");
         System.out.println("  3. yards");
 
-        choice = Helpers.getIntDiapazonInput("\n Enter field: ", 1, 3);
+        choice = Helpers.getIntRangeInput("\n Enter field: ", 1, 3);
 
         System.out.print("\n Result: ");
 
